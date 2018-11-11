@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Employee {
     private String name;
-    private Category category;
+    private Enum<Category> category;
 
     private Set<Employee> employees = new HashSet<>();
 
@@ -17,11 +17,11 @@ public class Employee {
         this.name = name;
     }
 
-    public Category getCategory() {
+    public Enum<Category> getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(Enum<Category> category) {
         this.category = category;
     }
 
@@ -35,11 +35,9 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' + "" +
-                ", category=" + (category) +
-                '}';
+        return name +" ("+ category+")";
     }
+
 
 
     public static void main(String[] args) {

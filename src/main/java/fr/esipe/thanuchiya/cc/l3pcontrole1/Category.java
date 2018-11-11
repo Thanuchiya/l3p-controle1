@@ -4,6 +4,6 @@ public enum Category {
         CEO,
         DEVELOPPER,
         ACCOUNTANT,
-        MARKETING;
+        MARKETING,
 
 }
